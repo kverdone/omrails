@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
   # validates_presence_of :name
   # attr_accessible :title, :body
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name
+
+  has_many :pins
 end
